@@ -1,0 +1,5 @@
+{
+  "name": "App Facturación",
+  "description": "Una aplicación web completa para un negocio de TI para gestionar clientes, productos y facturas. Incluye generación de PDF, estadísticas de ventas y almacenamiento persistente de datos.",
+  "requestFramePermissions": []
+}
