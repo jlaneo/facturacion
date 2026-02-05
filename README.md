@@ -1,20 +1,65 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 📊 Sistema de Gestión de Facturación
 
-# Run and deploy your AI Studio app
+Aplicación web moderna para la gestión completa de facturación con importación inteligente mediante IA.
 
-This contains everything you need to run your app locally.
+## ✨ Características
 
-View your app in AI Studio: https://ai.studio/apps/drive/1ouK9AApnvokWuk3hs_oqcIrGs3cVq30x
+- 🤖 **Importación Inteligente con IA**: Extrae datos de facturas usando Google AI
+- 📄 **Gestión de Facturas**: Creación, edición y eliminación de facturas de venta y compra
+- 👥 **Gestión de Clientes y Proveedores**: Organiza toda tu información de contactos
+- 📦 **Catálogo de Productos**: Administra tu inventario y precios
+- 💰 **Control de Gastos**: Registra y categoriza gastos empresariales
+- 📊 **Dashboard Analítico**: Visualiza métricas financieras en tiempo real
+- 📱 **Diseño Responsivo**: Funciona perfectamente en móviles y escritorio
+- 🔒 **Autenticación Segura**: Integración con Supabase Auth
+- 📑 **Exportación PDF**: Genera facturas profesionales en PDF
 
-## Run Locally
+## 🚀 Ejecutar Localmente
 
-**Prerequisites:**  Node.js
+**Requisitos:** Node.js 16+
 
+1. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. **Configurar variables de entorno:**
+   
+   Crea un archivo `.env.local` con:
+   ```env
+   VITE_SUPABASE_URL=tu_supabase_url
+   VITE_SUPABASE_ANON_KEY=tu_supabase_key
+   VITE_GEMINI_API_KEY=tu_gemini_api_key
+   ```
+
+3. **Ejecutar la aplicación:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Abrir en el navegador:**
+   
+   La aplicación estará disponible en `http://localhost:5173`
+
+## 🛠️ Stack Tecnológico
+
+- **Frontend**: React + TypeScript + Vite
+- **Backend**: Supabase (Auth + Database)
+- **IA**: Google Gemini API
+- **PDF**: jsPDF + jsPDF-AutoTable
+- **Gráficos**: Recharts
+
+## 📦 Estructura del Proyecto
+
+```
+├── components/     # Componentes reutilizables
+├── pages/          # Páginas de la aplicación
+├── lib/            # Utilidades y configuración
+├── context/        # Contextos de React
+├── hooks/          # Custom hooks
+└── types.ts        # Definiciones TypeScript
+```
+
+## 📝 Licencia
+
+© 2026 neoSoporte - Todos los derechos reservados
